@@ -1,4 +1,4 @@
-let score ="340"
+/*let score ="340"
 
 console.log(typeof score);
 console.log(typeof (score));
@@ -27,4 +27,11 @@ let daiku ="1234as"
 
 let majamaja = String(daiku)
 
-console.log(typeof majamaja);
+console.log(typeof majamaja);*/
+
+let value = 3
+
+let valueId = -(value);
+console.log(valueId);
+
+console.log(43%2)
