@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding with Shivam</title>
+</head>
+<body style="background-color: rgb(46, 46, 46); color: white;">
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = 'main'
+    div.id = Math.round(Math.random()*10+1)
+    div.setAttribute('title',"generated title")
+    div.style.padding='10px'
+    div.style.backgroundColor='red'
+    // div.innerText='Learn code with Shivam'     we should avoid this because it doesnt work everytime and also it overwrites the value not directly changing it 
+    const diwali = (document.createTextNode("Learn code with Shivam"))
+    div.appendChild(diwali)
+    
+
+    document.body.appendChild(div)
+</script>
+</html>
