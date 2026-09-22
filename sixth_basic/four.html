@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipultion coding with yt</title>
+</head>
+<body style="background-color: rgb(38, 37, 37);color: white;">
+   <ul class="language">
+    <li>Java_Script</li>
+   </ul> 
+</body>
+<script>
+    function addlanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+      }
+      addlanguage('python')
+      addlanguage('java')
+
+      //++++++++++++++++Justt optimised way of adding new elements in the list++++++++++++++++++++++++
+      function optimised_languge(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))//appendChild se vo direct add kar dega na ki innerHTML ki tarah pura code read karne ke baad
+        document.querySelector('.language').appendChild(li)
+      }
+      optimised_languge('react')
+
+      //+++++++++EDIT++++++++++++++
+
+
+      const secondlang = (document.querySelector('li:nth-child(2)'))
+    //   secondlang.innerHTML = 'MOJO'
+    const newli=(document.createElement('li'));
+    newli.textContent="C++"
+    secondlang.replaceWith(newli)
+
+    //EDIT
+
+    const thirdlang = (document.querySelector('li:first-child'))
+    thirdlang.outerHTML = '<li> TypeScript</li>'
+
+    //REMOVE
+
+
+    const lastlang = (document.querySelector('li:last-child'))
+    lastlang.remove()
+
+
+      
+</script>
+</html>
