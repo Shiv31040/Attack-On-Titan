@@ -1,0 +1,40 @@
+body {
+    margin: 4px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button {
+    height: 100px;
+    width: 100px;
+    border: 4px solid black;
+}
+
+#red {
+    background-color: red;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#green {
+    background-color: green;
+}
+
+p {
+    text-align: center;
+}
