@@ -1,5 +1,3 @@
-console.log("JS connected");
-
 const forms = (document.querySelector("form"))
 
 
