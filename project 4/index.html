@@ -6,7 +6,25 @@
     <link rel="stylesheet" href="first.css">
     <title>Random No. Gusser</title>
 </head>
-<body>
+<body><div class="game">
+    <h1>Number Guessing Game</h1>
+    <p>Try and guess a random no. between 1 and 100.<br>
+    You have 10 attempts to guess the number.</p>
+    <br>
+    <form class="form">
+        <label for="guessField" id="guess">Guess a Number</label>
+        <input type="text" class="guessField" id="guessField" maxlength="10"><br><br>
+        <button id="subt" class="guessSubmit">Submit Guess</button><br>
+        </form>
+
+        <div class="resultParas">
+        <p class="guesses">Previous Guesses:<span class="guesses"></span></p>
+        <p class="remaining">Guesses Remaining: <span class="lastResult">10</span></p>
+        <p class="lowOrHi"></p>
+        </div>
+    
+
+    </div>
     <script src="one.js"></script>
 </body>
 </html>
