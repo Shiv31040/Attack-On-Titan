@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    border: 2px solid white;
+    width: 60%;
+}
+
+.card span {
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+#profile_pic {
+    display: block;
+    width: 275px;
+    height: 280px;
+    object-fit: cover;
+}
+
+#followers {
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 14%;
+}
